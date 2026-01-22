@@ -1,0 +1,197 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "2a9ed11d-c008-4189-b792-461be69db552",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 30, 50, ['a', 'b', 'c']]\n",
+      "c\n"
+     ]
+    }
+   ],
+   "source": [
+    "# nested list elements access\n",
+    "lst=[1,2,3,4,[10,30,50,['a','b','c']],29,1,3]\n",
+    "print(lst[4])\n",
+    "print(lst[4][3][2])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "99275f2c-c976-4f28-9d8d-4311c67eab51",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 1 2 3 4 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 2.5, 3, 4, 5]\n",
+      "[2, 2.5, 4, 4.5, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# read list of number and if number is even add 0.5 and if number is odd add 1\n",
+    "lst=[1,2,3,4,5]\n",
+    "res=[2,2.5,4,4.5,6]\n",
+    "ist=list(map(int,input().split()))\n",
+    "for i in range(0,len(ist)):\n",
+    "    if lst [i]%2:\n",
+    "        lst[i]=lst[i]+1\n",
+    "    else:\n",
+    "        lst[i]+=0.5\n",
+    "        print(lst)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "d5fa96a3-6b3c-4526-9cd3-9f616bb5b14d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 1\n",
+      " 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "def sum(a,b):\n",
+    "    total=a+b\n",
+    "    return total\n",
+    "\n",
+    "a=int(input())\n",
+    "b=int(input())\n",
+    "result=sum(a,b)\n",
+    "print(result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1c3dccfa-861c-40a5-a827-9da6269f2cfd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 5\n",
+      " 10\n",
+      " 15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "#sum of three numbers using functions\n",
+    "def sum(a,b,c):\n",
+    "    total=a+b+c\n",
+    "    return total\n",
+    "\n",
+    "a=int(input())\n",
+    "b=int(input())\n",
+    "c=int(input())\n",
+    "result=sum(a,b,c)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "cdabbbbd-8862-40e9-a10d-2a760e9dd069",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 20\n",
+      " 30\n",
+      " 40\n",
+      " 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "140\n"
+     ]
+    }
+   ],
+   "source": [
+    "#sum of four numbers using functions\n",
+    "def sum(a,b,c,d):\n",
+    "    total=a+b+c+d\n",
+    "    return total\n",
+    "\n",
+    "a=int(input())\n",
+    "b=int(input())\n",
+    "c=int(input())\n",
+    "d=int(input())\n",
+    "result=sum(a,b,c,d)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f380eb14-a537-4feb-90ac-e98645bb986c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
